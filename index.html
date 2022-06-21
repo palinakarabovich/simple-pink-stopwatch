@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Timer</title>
+</head>
+<body>
+    <div class="timer">
+    <div class="clock clock__container">
+        <div class="clock__element clock__element_type_hour"></div>
+        <div class="clock__element clock__element_type_minute"></div>
+        <div class="clock__element clock__element_type_second"></div>
+        <div class="clock__element clock__element_type_millsecond"></div>
+    </div>
+    <div class="counter counter__container">
+        <div class="counter__element">
+            <div class="counter__element_type_hour">
+                00
+            </div>
+        </div>
+        <div class="counter__element">
+            <div class="counter__element_type_minute">
+                00
+            </div>
+        </div>
+        <div class="counter__element">
+            <div class="counter__element_type_second">
+                00
+            </div>
+        </div>
+        <div class="counter__element">
+            <div class="counter__element_type_millsecond">
+                00
+            </div>
+        </div>
+    </div>
+    <div class="buttons buttons__container">
+        <button class="button button_type_start">Start</button>
+        <button class="button button_type_pause button_inactive">Pause</button>
+        <button class="button button_type_lap button_inactive">Lap</button>
+        <button class="button button_type_stop button_inactive">Stop</button>
+        <button class="button button_type_reset button_inactive">Reset</button>
+    </div>
+</div>
+
+<div class="marks">
+    <p class="marks__title">Rounds</p>
+<p class="marks__empty"> Click on 'LAP' while stopwatch are runing to save a round</p>
+</div>
+
+<template id="template_type_lap">
+    <div class="lap">
+        <p class="lap__result"> 1 : 00 : 00</p>
+    </div>
+</template>
+
+
+<script src="./index.js"></script>
+</body>
+</html>
